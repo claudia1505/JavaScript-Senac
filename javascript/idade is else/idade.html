@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade If e Else</title>
+</head>
+<body>
+    
+
+<!-- Crie um programa que leia a idade de uma pessoa no final informar a idade e a seguinte classificação:
+maior ou igual a 18 -- "Maior de idade"
+menor do que 18 -- "Menor de idade"
+Saida na pagina:
+Idade: 45
+Status: Maior de idade -->
+
+ 
+
+<script>
+
+ 
+/* Instrução para o usuário inserir uma idade */
+
+    let idade = prompt('Digite a idade: ', '');
+
+ /*Abaixo vamos criar a condição de retorno da idade  */
+/* O if está perguntado SE A IDADE FOR MAIOR QUE 18 */
+    if (idade >= 18) {
+
+/* Aqui dentro da chave, será dado o comando sobre o que queremos que
+apareça na tela, ouo seja, vai aparecer a idade digitada pelo usuario */
+
+        document.write('Idade: ' + idade);
+
+/* E abaixo, o comando para a resposta com relação à idade digitada, se é 
+MAIOR DE IDADE  */
+
+        document.write('<br> Status: Maior de idade');
+
+
+
+    } 
+    
+    /* Agora o Else, significa a condição CONTRÁRIA */
+    
+    else {
+
+
+/* Ou seja: abaixo vai aparecer a idade que o usuário digitou */
+
+        document.write('Idade: ' + idade);
+
+
+/* E abaixo, o comando para a resposta com relação à idade digitada, se é 
+Menor DE IDADE  */
+
+        document.write('<br> Status: Menor de idade');
+
+    }
+
+ 
+
+</script>
+
+
+
+</body>
+</html>

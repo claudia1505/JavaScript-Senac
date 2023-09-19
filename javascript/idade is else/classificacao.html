@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classificacao idade</title>
+</head>
+<body>
+
+     <!-- Crie um programa que leia o nome e a  
+    idade do usuário no final exibir na pag
+    o nome a idade e sua classificação.
+    
+    Classificação:
+    Menor do que 12 -- Criança
+    Menor do que 18 -- Adolescente
+    Maior ou igual a 18 -- Adulto -->
+
+
+<script>
+
+let nome = prompt('Digite seu nome', '');
+let idade = prompt('Digite sua idade', '');
+
+if(idade < 12){
+
+    document.write('Nome: ' + nome);
+    document.write('<br>Idade:' + idade);
+    document.write('<br> Classificação: Criança');
+
+} else if(idade < 18){
+
+    document.write('Nome: ' + nome);
+    document.write('<br>Idade: ' + idade);
+    document.write('<br> Classificação: Adolescente');
+
+} else{
+
+    document.write('Nome: ' + nome);
+    document.write('<br>Idade: ' + idade);
+    document.write('<br> Classificação: Adulto');
+}
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

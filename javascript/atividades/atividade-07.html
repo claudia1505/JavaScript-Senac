@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cor de fundo</title>
+</head>
+
+<body>
+
+    <!-- ATIVIDADE-07
+
+Desenvolva um script e, que interage com o usuário, solicitando 
+que ele insira o nome de uma cor em inglês. O script verificará se
+a cor inserida é igual a "yellow" e, se for o caso, alterará o plano 
+de fundo da página para essa cor, exibindo a mensagem "Muito bem, [cor],
+é uma linda cor!(em um título grande). Caso 
+contrário, se a cor inserida for diferente de "yellow", o script mostrará
+a mensagem: "Lamento, [cor], não é uma cor legal!" em um titulo menor. -->
+
+    <script>
+
+
+        /* Código para o usuário escolher uma cor */
+
+        let cor = prompt('Escolha uma cor em inglês');
+
+        /* Aqui inserimos o código que vai atribuir a cor de fundo do documento */
+
+        let color = document.bgColor;
+
+        /* Agora vamos atribuir a condição, ou seja, "SE A COR FOR YELLOW"  */
+
+        if (cor == 'yellow') {
+
+/* Agora vamos inserir dentro do "document.write" o que queremos que apareça na
+página e tambem a cor determinada pelo sistema e não pelo usuario  */
+
+            document.write('<h1> Muito bem, ' + '<body bgColor=yellow>' + cor + ' ,é uma cor linda!</h1>');
+        }
+
+/* agor a condição contrária */
+
+        else {
+
+             /* Se a cor escolhida pelo usuário, não for "YELLOW" */
+            (color != color);
+
+/* Inserimos o código para aparecer dentro da pagina que O USUARIO
+DIGITOU A COR ERRADA  */
+
+            document.write('<h1><strong>Lamento! Mas a cor ' + cor +' escolhida não é legal: </strong></h1>');
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

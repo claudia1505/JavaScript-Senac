@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação do dia da Semana</title>
+</head>
+
+<body>
+    <!-- Crie um programa que pergunta ao usuário qual é o 
+        dia da semana atual e verifica se a resposta é "sábado" 
+        ou "domingo". Se o dia for "sábado" ou "domingo", exiba 
+        "É fim de semana, aproveite!", caso contrário, exiba 
+        "É dia útil, continue trabalhando." -->
+
+    <script>
+
+        let dia_daSemana = prompt('Qual o dia da semana atual', '')
+
+        if (dia_daSemana === 'sabado' || dia_daSemana === 'domingo') {
+
+            document.write('<Font color="blue"><b><h1>É fim de semana aproveite!</b></font>')
+
+        } else{
+
+            document.write('<Font color="red"><b><h1> &#x1f4da É dia útil, continue trabalhando!');
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>

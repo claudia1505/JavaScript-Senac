@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificação de idade e autorização</title>
+    <title>Atividade-9 Verificação de idade e autorização</title>
 </head>
 
 <body>
@@ -19,17 +19,31 @@
         let idade = prompt('Digite aqui a sua idade', '');
         let autorizacao = prompt('Tem autorização de seus pais? Sim ou Não');
 
-        /* Inserindo as condições (&&)  */
+        /* Inserindo as condições (&&)  Os operadores || e 
+        && são operadores de comparação, Ou seja, eles 
+        servem para testar se duas ou mais expressões são 
+        verdadeiras ou não. O operador || , conhecido como 
+        "OR" (ou), retorna verdadeiro se pelo menos UMA das 
+        expressões fornecidas for verdadeira. */
+        
 
-        if (idade > 18 && autorizacao == 'sim') {
+        // Criando variavel "Condição" que vai receber os valores e comparar com o valor digitado pelo usuário e com isso, verificar se o valor digitado pelo usuário irá autorizar a entrada
+        if (idade >= 18 && autorizacao == 'sim') {
 
             document.write('Idade: <b><font color="green">' + idade + '</b>');
             document.write('<br><b><font color="blue">Pode entrar </b></font>')
 
-        } else {
+            // se for maior que o valor declarodo acima, vai aparecer a mensagem acima
+
+        } 
+        
+        // Criando a conição "Contrária"
+        else {
 
             document.write('Idade:<b><font color="Red"> ' + idade + '</b></font>');
             document.write('<br><b> <font color="red">Não</font> pode entrar </b>');
+
+            // se for menor que o valor declarodo acima, vai aparecer a mensagem acima
         }
 
 

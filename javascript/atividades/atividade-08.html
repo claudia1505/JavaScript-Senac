@@ -1,53 +1,63 @@
 <!DOCTYPE html>
-<html lang="ept-br">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nota aprovado e reprovado</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade-8 Nota aprovado e reprovado</title>
 </head>
+
 <body>
 
-<!-- ATIVIDADE 08 -->
+  <!-- ATIVIDADE 08 -->
 
-<!-- desenvolva um script que interaja com o usuario por meio de prompts,solicitando
+  <!-- desenvolva um script que interaja com o usuario por meio de prompts,solicitando
 o nome de um aluno e sua nota. O script avaliara se a nota é maior ou igual a 7 e ,com 
 base nessa avaliação,exibira a mensagem'aluno:[nome do aluno]- 
 [nota]>>APROVADO<<' em azul se o aluno for aprovado ou 'Aluno:[NOTA]>>REPROVADO<<'
 em vermelho se o aluno for reprovado -->
 
-<script>
+  <script>
 
+    // Inserindo comando para usuario inserir as informações pedidas
+    let aluno = prompt('Digite seu Nome ', '');
 
-let aluno = prompt(' Digite seu Nome ','');
+    let nota = prompt('Digite sua Nota ', '');
 
-let nota = prompt ('Digite sua Nota','');
+       
+    // Criando variavel "Condição" que vai receber os valores e comparar com o valor digitado pelo usuário e com isso, verificar se o valor digitado pelo usuário irá aprová-lo ou reprová-lo
+    if (nota >= 7) {
 
+      document.write('O(A) Aluno(a)  ' + aluno + ' foi <font color=blue> APROVADO(A) </font><br>');
 
+      document.write('Sua Nota é <font color=blue>' + nota  + '</font>');
 
-if(nota >=7){
+      //Se estiver acima da média declara acima, aparecerá a mensagem acima
 
-    document.write(' O Aluno foi ' + aluno + ' APROVADO <br>');
-
-    document.write('a Nota é' + nota + '<font color=blue>' + 'Aprovado' + '</font>');
-
-} else{
-
-  document.write('O Aluno foi '+aluno+'<p style=color:red>' + ' REPROVADO' + '</style> </p>');
-
-}
-
-
-
-
-
-
-
-</script>
-
-
-
-
-
+    } 
     
+    // Criando a condição "Contrária"
+    else {
+
+      document.write('O(A) Aluno(a)  ' + aluno + ' foi' + '<p style=color:red>' + ' REPROVADO(A)' + '</style> </p>');
+
+      // Se não atingir a média declara acima, aparecerá a mensagem acima
+
+    }
+
+
+
+
+
+
+
+  </script>
+
+
+
+
+
+
 </body>
+
 </html>

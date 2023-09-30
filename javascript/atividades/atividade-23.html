@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade-23 Pergunta e resposta</title>
+</head>
+<body>
+ 
+    
+
+    <script>
+    
+    /* Vamos inserir o comando para o usuári responder a pergunta que será exibida*/
+        let pergunta =prompt ('Qual valor de 5*2','');
+
+        /*Inserindo o comando para retornar o resultado*/
+        let resultado = function(a,b){
+            return a*b
+        };
+        
+        
+    
+        /*Vamos criar as condições para a resposta dada*/
+        if(pergunta == 10){
+          
+            document.write('<h3>Sua resposta: ', pergunta);
+            document.write("<font color='blue'><br>Que Legal, Você acertou!!");
+            document.write('</font color><br><b>Resultado é: ', resultado(5,2));
+        }
+        
+        // Criando a condição "Contrária"
+        else{
+                document.write ("<font color='red'><b><h3>Voce errou, tente de novo!</font color>")}
+        
+        
+    
+        </script>
+
+
+</body>
+</html>

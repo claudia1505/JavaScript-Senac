@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso do Switcht</title>
+</head>
+
+<body>
+
+    <script>
+
+        let dia = parseInt(prompt('Digite o dia da semana entre 1 e 7', ''));
+        let diadaSemana;
+
+        switch (dia) {
+
+            case 1:
+
+                diadaSemana = "Domingo";
+                break;
+
+            case 2:
+
+                diadaSemana = "Segunda Feira";
+                break;
+
+
+            default:
+                diadaSemana = "Valor Inválido";
+
+        }
+
+        document.write('Dia Digitado: ' + dia);
+        document.write('<br>Dia da Semana: ' + diadaSemana);
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

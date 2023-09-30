@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade-17 Valor de Venda</title>
+</head>
+
+<body>
+
+    <!--  Valor de venda:
+    Crie um programa que receba o preço de custo de um produto e mostre o valor de venda. Sabe-se que o preço de custo receberá um  acréscimo de acordo com um percentual informado pelo usuário.​ -->
+
+
+    <script>
+
+        /* IMPORTANTE: 
+        Qual a diferença entre parseInt e parseFloat?
+        parseInt() e parseFloat() O parserInt() é a forma mais 
+        comumente usada, recebendo uma string e retornando um inteiro, 
+        e o parserFloat() recendo uma string e retornando um número de ponto flutuante.*/
+
+
+        /* Inserindo comando para receber o preço de custo do produto*/
+
+        let preco_custo = parseFloat(prompt('Digite o preço de custo do produto: '));
+
+        /*Criando o comando para o usuário inserir o percentual de acréscimo.*/
+
+        let percentual_acrescimo = parseFloat(prompt("Digite o percentual de acréscimo: "))
+
+        /* Inserimos o comando para Calcular o valor de venda, ou seja,
+        o valor do custo + (calculamos o valor do preço de custo multiplicado pelo percentual
+        de acrescimo*/
+
+        let valor_venda = preco_custo + (preco_custo * percentual_acrescimo / 100);
+
+        /* Agora, vamos inserir o comando para aparecer o resultado da venda na tela*/
+
+        document.write('Valor de Custo: R$  ', preco_custo,'<br>');
+
+        document.write('Percentual de venda: ', percentual_acrescimo, "%");
+
+        document.write('<br>Valor de Venda: R$', valor_venda, ',00');
+
+        // document.write('<br>Lucro: ','<font color= red> R$',valor_lucro,',00')
+
+// document.write('<b>O valor da venda do produto é de: <b><font color="Red"></b>', valor_venda);
+
+    </script>
+
+
+</body>
+
+</html>

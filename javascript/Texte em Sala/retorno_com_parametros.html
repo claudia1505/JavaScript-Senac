@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Returno com Parametros</title>
+</head>
+<body>
+<script>
+
+function somarValores(a, b){
+    return a+b;
+
+}
+
+// Aqui, permitimos que os valores  dos parametros sejam definidos pelo usuário
+a = parseInt(prompt('Valor 1:', ''));
+b = parseInt(prompt('Valor 2:', ''));
+
+
+// A variavel "resultado" está recebendo a função somaValores
+let resultado = somarValores (a, b);
+
+// E abaixo, irá aparecer no console e na tela.
+console.log(resultado);
+document.write('Resultado da soma = '+ resultado);
+
+
+
+
+
+</script>
+
+
+    
+
+</body>
+</html>

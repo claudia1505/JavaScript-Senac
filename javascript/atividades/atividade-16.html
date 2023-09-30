@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade-16 Boletim Escolar</title>
+</head>
+<body>
+    
+<script>
+
+/* Boletim Escolar:
+Crie um programa que leia o nome do aluno e 4 notas, no final 
+exibir o nome do aluno as quatro notas, a média e se a média 
+for maior ou igual a 7,0 aprovado caso contrário reprovado..*/
+
+
+// Inserindo comando para que o usuario digite o nome do aluno e as 4 notas.
+
+let nome = prompt('Digite o nome do aluno: ');
+
+/* A função parseFloat abaixo analisa um argumento (convertendo-o 
+para uma string primeiro caso necessário) e retorna um número de
+ ponto flutuante (número decimal).*/
+
+let nota1 = parseFloat(prompt('Digite a primeira nota: '));
+let nota2 = parseFloat(prompt('Digite a segunda nota: '));
+let nota3 = parseFloat(prompt('Digite a terceira nota: '));
+let nota4 = parseFloat(prompt('Digite a quarta nota: '));
+
+
+// Inserindo comando para Calcular a média das notas.
+let media = (nota1 + nota2 + nota3 + nota4) / 2;
+
+/* Inserimos abaixo, comando para exibir o nome do aluno, as
+ quatro notas, a média e se a média for maior ou igual a 7,0 
+ aprovado caso contrário reprovado.*/
+
+document.write('<b>Nome do aluno:</b>  ', nome);
+
+document.write('<br>Nota 1 =  ', nota1);
+
+document.write('</b><br>Nota 2 =  ', nota2);
+
+document.write('</b><br>Nota 3 =  ', nota3);
+
+document.write('</b><br>Nota 4 =  ', nota4);
+
+document.write('<br><b>Média =<font color="Red">  ', media);
+
+
+/* Inserindo instruções para informar a média*/
+
+/* Se a média for maior ou igual a 7, vai informar que foi aprovado*/
+
+if (media >= 7.0){ 
+
+    document.write('</font color></b><br><b>Situação: </b><font color="Blue"><b>Aprovado</b></font color></br>')
+
+}
+
+/* Do contrário, será reprovado*/
+else{
+
+document.write('</font color></b><br><b>Situação: </b><font color="REd"><b>Reprovado</b></font color></br>')
+
+}
+
+</script>
+
+</body>
+</html>

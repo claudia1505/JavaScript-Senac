@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de String Maiuscula e Minuscula</title>
+</head>
+
+<body>
+    <script>
+
+        /* Aprendendo a converter um nome minusculo para MAIUSCULO*/
+
+        let nome = prompt('Digite seu nome', '');
+
+        /* Usamos o código "ToUpperCase" para alterar de letra minuscula para
+         maiuscula no console*/
+        let nomeMaiusculo = nome.toUpperCase();
+
+        /*  CONVERTENDO AGORA DE MAIUSCULO PARA MINUSCULO*/
+        let nomeMinusculo = nome.toLowerCase();
+
+        /* Este código abaixo nome "charAt(0)" vai manter a primeira letra
+        conforme selecionado no inicio, ex "nomePriMaiusculo", se voce colocar 
+        um numero dentro desta chave, ele vai começar a contar para cortar a partir
+        daquela letra, exemplo: meu nome (Claudia) se eu colocar dentro do "charAt(0)"
+        o numero 3, ele vai cortar a letra a partir do ("a" de Claudia), o código
+        "slice(2)" serve para cortar a letra que voce quer tirar, por exemplo:
+        meu nome (Claudia) foi selecionado dentro da chave o numero "2",
+        significa que a segunda letra a partir do C será cortada (Caudia)*/
+        let nomePriMaiusculo = nome. charAt(0).toUpperCase() + nome.slice(2);
+
+        console.log(nome)
+        console.log(nomeMaiusculo);
+        console.log(nomeMinusculo);
+        console.log(nomePriMaiusculo);
+        
+
+
+       
+
+       
+
+    </script>
+
+</body>
+
+</html>

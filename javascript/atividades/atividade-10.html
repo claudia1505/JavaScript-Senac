@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificação do dia da Semana</title>
+    <title>Atividade-10 Verificação do dia da Semana</title>
 </head>
 
 <body>
@@ -20,13 +20,19 @@
         let dia_daSemana = prompt('Qual o dia da semana atual', '')
 
 
-        /* Aqui inserimos as condições */
+        /* Aqui inserimos as condições || 
+        /* Os operadores || e && são operadores de comparação, Ou seja, eles servem para testar se duas ou mais expressões são verdadeiras ou não. O operador || , conhecido como "OR" (ou), retorna verdadeiro se pelo menos UMA das expressões fornecidas for verdadeira. */ 
+
+         // Criando variavel "Condição" que vai receber os dias da semana e comparar com o digitado pelo usuário e com isso, verificar se o valor digitado pelo usuário é dia util ou não
         if (dia_daSemana === 'sabado' || dia_daSemana === 'domingo') {
 
             
             document.write('<Font color="blue"><b><h1>É fim de semana aproveite!</b></font>')
 
-        } else{
+        } 
+        
+        //Inserindo a condição "Contrária"
+        else{
 
             document.write('<Font color="red"><b><h1> &#x1f4da É dia útil, continue trabalhando!');
         }

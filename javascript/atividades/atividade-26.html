@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 26 Calculadora Simples</title>
+</head>
+
+<body>
+
+    <script>
+        /* Calculadora simples:
+        Crie um programa que leia dois numeros inteiros e qual operação
+        deseja fazer, com os numeros (soma, subtração, multiplicação e divisão)
+        fo final exibir os numeros digitados, a operação escolhida e o resultado. */
+
+
+        // vamos primeiro inserir as informações para o usuario digitar
+        let numero1 = parseFloat(prompt('Digite o primeiro número', ''));
+        let numero2 = parseFloat(prompt('Digite o segundo numero', ''));
+
+        //Aqui vamos declarar a operação a ser feita
+        let operacao = prompt('Digite a operação \n soma - subtração - multiplicação - divisão');
+
+        // Aqui inserimos o que queremos que apareça na tela
+        document.write('Primeiro numero: ', '' + numero1);
+        document.write('<br>Segundo numero: ', '' + numero2);
+
+        // inserimos qual a operação escolhida para aparecer na tela
+        document.write('<br>Operação escolhida: ', '' + operacao);
+
+
+        // vamos agora inserir as "Consições" a serem realizadas
+        if (operacao === 'soma') {
+
+            document.write('<br>Resultado: ' + (numero1 + numero2));
+            // na tela vai aparecer o resultado da escolha da soma
+
+
+            // Inserimos a outra opção para realizar a operação
+        } else if (operacao === 'subtração') {
+
+            document.write('<br>Resultado: ' + (numero1 - numero2));
+            // na tela vai aparecer o resultado da escolha da subtração
+
+
+            // Inserimos a outra opção para realizar a operação
+        } else if (operacao === 'multiplicação') {
+
+            document.write('<br>Resultado: ' + (numero1 * numero2));
+            // na tela vai aparecer o resultado da escolha da multiplicação
+
+            // Inserimos a outra opção para realizar a operação
+        } else if (operacao === 'divisão') {
+
+            document.write('<br>Resultado: ' + (numero1 / numero2));
+            // na tela vai aparecer o resultado da escolha da divisão
+
+
+            /* Inserimos a outra opção para que retorne um erro caso o usuario digite
+            outra opção que não estiver declarada*/
+        } else {
+
+            document.write('<br>Resultado: Operação Inválida!');
+
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

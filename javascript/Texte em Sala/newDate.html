@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Date</title>
+</head>
+<body>
+    
+<script>
+
+document.write('<br>');
+
+// "New Date" ele é responsavel pela data, hora etc, faz com que um objeto de date seja criado e atribuido a uma variavel
+let data = new Date();
+
+// agora vamos chamar as coisas que quero
+
+// Retorna o dia da semana da data atual iniciando em 0, ou seja, se hoje é quinta
+document.write('Dia da semana: ' + data.getDay() + '<br>');
+
+// Retorna o dia no mês da data atual
+document.write('Dia do mês: ' + data.getDate() + '<br>');
+
+
+// Retorna o mês da data atual
+// Retornando sem o incremento ele vai mostar no dia de hoje(28/09/2023) o Mês 8 (Agosto)
+document.write('Mês' + data.getMonth() + '<br>');
+
+// Retornando com o incremento +1, ou seja retorna o mês 9 (Setembro)
+document.write('Mês' + (data.getMonth() +1) + '<br>');
+
+/* Retorna o ano de acordo com o que está em seu sistema operacional, ou seja,
+ de acordo com a data e ano do seu computador*/
+
+document.write('Ano ' + data.getFullYear() + '<br>');
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

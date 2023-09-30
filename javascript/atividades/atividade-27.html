@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 27 Dia Mes e Ano</title>
+</head>
+<body>
+    
+<script>
+
+
+let data = new Date();
+
+        let dia = data.getDate();
+
+        let mes = data.getMonth()+1;
+
+        let ano = data.getFullYear();
+
+ 
+
+        if(mes < 10){
+
+            mes = '0'+ mes;
+
+        }
+
+ 
+
+        if(dia < 10){
+
+            dia = '0'+ dia;
+
+        }
+
+        document.write(dia + '/' + mes + '/' + ano);
+
+ 
+
+ 
+
+ 
+
+
+ //Outra forma de fazer este programa, tudo pode ser feito na mesma linha
+
+/*
+document.write('Dia ' + data.getDate() + ' / '+ (data.getMonth() +1) + ' / ' + data.getFullYear() );*/
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

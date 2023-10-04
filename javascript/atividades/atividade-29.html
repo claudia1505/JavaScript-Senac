@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 29 Eventos de Mouse</title>
+
+</head>
+
+<body>
+    <!-- Crie uma div com  5 circulos de cores diferentes sendo que,
+ao clicar em um deles apareça o nome "Premiado e os outros somente um x" -->
+
+ 
+
+    <style>
+
+        /*Primeiro, precisamos criar o CSS externo e configurar a div container para configurar os circulos  */
+
+        #container{
+
+            display: flex;
+            margin: 5px;
+
+        }
+
+
+        /* Agora vamos inserir a configuração da classe "area" */
+        .area {
+
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 1px solid #000;
+            background-color: blue;
+            margin: 5px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-size: 20px;
+
+        }
+
+    </style>
+
+ 
+<!-- Criando uma div container -->
+<div id="container">
+
+
+    <!-- E agora outra div cada uma com seu circulo e suas configurações, junto
+    com uma classe, e depois o que vamos querer escrever dentro do circulo -->
+    <div  onclick="this.style.backgroundColor = 'white'" onmouseover="this.style.backgroundColor = 'red' " class="area"> <font color="red">X</font></div>
+
+
+    <div  onclick="this.style.backgroundColor = 'white'" onmouseover="this.style.backgroundColor = 'blue' " class="area"> <font color="blue">X</font></div>
+
+
+    <div  onclick="this.style.backgroundColor = 'white'" onmouseover="this.style.backgroundColor = '#076624' " class="area"> <font color="#076624">X</font></div>
+
+
+    <div  onclick="this.style.backgroundColor = 'white'" onmouseover="this.style.backgroundColor = 'yellow' " class="area"> <font color="yellow">PREMIADO</font></div>
+
+
+    <div  onclick="this.style.backgroundColor = 'white'" onmouseover="this.style.backgroundColor = 'black'" class="area"> <font color="black">X</font></div>
+
+</div>
+
+</body>
+
+ 
+
+ 
+
+ 
+
+</html>
+
+ 
+</body>

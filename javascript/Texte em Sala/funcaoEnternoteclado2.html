@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento do TEclado</title>
+</head>
+<body>
+    <h2>Exemplo Evento Onkeydown</h2>
+
+
+<script>
+/*Esse script mostra uma  mensagem quando voce pressiona 
+a tecla Enter no teclado*/
+
+document.onkeydown = function(event) {
+
+
+/*Inserindo a condição de que o Alert vai aparecer
+só quando voce apertar a tecla "Enter"*/
+    if(event.key === "Enter" ){
+
+        alert("Você pressionou o Enter!");
+    }
+
+
+};
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

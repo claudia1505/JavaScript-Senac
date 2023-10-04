@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 30 Lampada Liga Desliga</title>
+</head>
+
+<body>
+
+    <!-- Inserindo um título no html -->
+    <h2>
+        <font color="red">Lâmpada</font> -<font color="yellow"> Liga</font>
+        <font color="black"></font>/</font>
+        <font color="Gray">Desliga</font>
+        </font> </h2>
+
+        
+   
+        <script>
+
+ /* Dentro do script, inserimos a função lampadaOn e
+ inserimos o comando document.getElementById que nada mais é do que
+ pedir para trazer o Elemento Id de nome "LampadaOn" referente a imagem*/
+
+
+            function lampadaOn() {
+    
+                document.getElementById("lampada").src = "imagens/Ligada.png";
+    
+            }
+    
+
+        /* E abaixo inserimos a função lampadaOff e
+     inserimos o comando document.getElementById que nada mais é do que
+    pedir para trazer o Elemento Id de nome "LampadaOff" referente a imagem*/
+    
+            function lampadaOff() {
+    
+                document.getElementById("lampada").src = "imagens/desligada.png";
+    
+            }
+    
+        
+        </script>
+    
+           
+        <!-- Abaixo criamos um ID para a lâmpada desligada -->
+        <div>
+    
+            <img id="lampada" src="imagens/desligada.png" alt="" width="150">
+    
+            <br>
+
+            <!-- E agora, inserimos o imput para clicar no "liga" o u"Desliga -->
+    
+            <input type="radio" id="teste" name="teste" onclick="lampadaOn()">Ligar <br>
+    
+            <input type="radio" id="teste" name="teste" onclick="lampadaOff()">Desligar
+    
+         
+        </div>
+    
+     
+</body>
+
+</html> 

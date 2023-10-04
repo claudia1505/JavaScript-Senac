@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <!-- Enunciado: Elabore um programa utilizando os seguintes eventos de mouse:​
+        onclick​
+        ondblclick​
+        onmouseover​
+        omouseout​
+        onmouseup -->
+
+
+
+    <h2>OnClick</h2>
+
+    <p>O onclick aciona uma função quando um elemento é clicado.</p>
+    <p>Clique para acionar a função que produzirá "Olá Mundo":</p>
+
+    <!-- Vamos inserir o botão onclick pedindo uma ação -->
+    <button onclick="acao()">Clique aqui</button>
+
+
+    <!-- criando uma id nome -->
+    <p id="nome"></p>
+
+
+    <script>
+
+        function acao() {
+            /*Dentro do script, inserimos a função ação e
+            inserimos o comando document.getElementById que nada mais é do que
+            pedir para trazer o Elemento Id "nome"  */
+            document.getElementById("nome").innerHTML = "Olá Mundo";
+
+        }
+
+
+    </script>
+
+
+
+
+
+    <h2>ondblclick​</h2>
+    <p>O onclick aciona uma função quando um elemento é clicado 2 vezes.</p>
+
+    <button ondblclick="facadenovo()">Clique aqui</button>
+
+    <p id="nomE"></p>
+
+    <script>
+
+        function facadenovo() {
+            /*Dentro do script, inserimos a função ação e
+            inserimos o comando document.getElementById que nada mais é do que
+            pedir para trazer o Elemento Id "nome"  */
+            document.getElementById("nomE").innerHTML = "Olá Mundo";
+
+        }
+
+    </script>
+
+
+
+        <h2>onmouseout​​​</h2>
+        <p>O onmouseout​​ aciona uma função que um elemento so aparece se depois que passar o mouse em cima dele.</p>
+
+        <button onmouseout="faca()">Clique aqui</button>
+
+        <p id="texto"></p>
+
+        <script>
+
+                function faca() {
+                /*Dentro do script, inserimos a função ação e
+             inserimos o comando document.getElementById que nada mais é do que
+             pedir para trazer o Elemento Id "nome"  */
+             document.getElementById("texto").innerHTML = "Olá Mundo";
+
+            }
+
+        </script>
+
+<br>
+
+
+        <h2>onmouseup​​​</h2>
+        <p>O onmouseup​ aciona uma função que um elemento so aparece se depois que passar o mouse em cima dele.</p>
+
+        <button onmouseup="facaagora()">Clique aqui</button>
+
+        <p id="texto2"></p> 
+
+        <script>
+
+            function facaagora() {
+                /*Dentro do script, inserimos a função ação e
+                inserimos o comando document.getElementById que nada mais é do que
+                pedir para trazer o Elemento Id "nome"  */
+                document.getElementById("texto2").innerHTML = "Olá Mundo";
+
+            }
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de Mouse</title>
+</head>
+<body>
+    
+<script>
+ 
+ //Inserimos uma função de ação
+ function acao(){
+
+    //Inserimos um alert 
+    alert('Evento Disparado');
+ }
+
+</script>
+ <!-- Vamos criar uma div fora do script para atribuir a ação de clicar, ou seja,
+dentro da div, colocamos o "onclick + ação" para que ao clicar na cor, apareça
+o alert "Evento Disparado dentro de um imput" -->
+ <div onclick="acao()" style="background-color:blue; height: 50px; width: 50px;"></div>
+
+ <br>
+
+ <!-- Vamos criar um button, para aparecer um botão "Evento Onclick" -->
+ <button onclick="acao()">Evento Onclik</button>
+
+
+
+
+
+
+
+</body>
+</html>

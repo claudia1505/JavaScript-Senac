@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de Mouse</title>
+</head>
+<body>
+    
+<script>
+ 
+ //Primeiro preparamos a inserção do onclick e Inserimos uma função de ação
+ function acao(){
+
+    //Inserimos um alert 
+    alert('Evento Disparado');
+ }
+
+</script>
+ 
+<!-- Criando um título -->
+<h2>Eventos de mouse aplicados em botões:</h2>
+ <br>
+
+ <!-- Vamos criar um button, para aparecer um botão,
+ "Evento Onclick" clicando nele apenas uma vez -->
+ <button onclick="acao()">Evento Onclik</button>
+
+  <!-- Vamos criar outro button "ondblclick", para aparecer um botão,
+ "Evento Onclick" clicando nele duas vezes -->
+ <button ondblclick="acao()">Evento Ondblclick</button>
+
+   <!-- Vamos criar outro button "onmouseup", para aparecer um botão,
+ "Evento Onmouseup" clicando nele e só após soltar ele vai aparecer o alert -->
+ <button onmouseup="acao()">Evento Onmouseup </button>
+
+
+    <!-- Vamos criar outro button "onmouseover", para aparecer um botão,
+ "Evento Onmouseover" passando o mouse nele  vai aparecer o alert -->
+ <button onmouseover="acao()">Evento Onmouseover</button>
+
+     <!-- Vamos criar outro button "onmouseout", para aparecer um botão,
+ "Evento Onmouseout" quando passarmos o mouse e tirarmos o mouse dentro do imput,
+ vai aparecer o alert -->
+ <button onmouseout="acao()">Evento Onmouseout</button>

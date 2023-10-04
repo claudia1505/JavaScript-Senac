@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função Contador no Teclado</title>
+</head>
+<body>
+    
+    <h2>Exemplo Evento Onkeydown</h2>
+
+    <script>
+        
+        /*Esse comando mostra quantas vezes voce precionou o teclado*/
+
+        var contador = 0;
+        
+        document.onkeydown = function(event) {
+        
+            contador++;
+            console.log("Teclas Pressionadas: " + contador);
+                       
+        };
+        
+        </script>
+
+
+
+
+</body>
+</html>

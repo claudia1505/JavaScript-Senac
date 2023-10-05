@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuição de Caracteres</title>
+</head>
+
+<body>
+
+    <script>
+
+        function distribuirCaracter() {
+
+            /* Selecionar o valor digitado (aqui ele vai guardar o valor digitado*/
+            let caracter = document.getElementById('entrada').value;
+
+            /* Limpar o campo de digitação (aqui, depois de guardado ovalor digitado ele limpa para poder digitar outro) */
+            document.getElementById('entrada').value = '';
+
+            /* Limpar espaços em branco nas no início e final da string, ou seja, se o usuario digitar um espaço, ele vai limpara e não vai aceitar este espaço em branco dentro do imput*/
+            caracter.trim();
+
+
+            /* Separar o valores numericos, podendo ser colocados tanto na horizontal quanto na vertical */
+            switch (caracter) {
+
+
+                case '0': case '1': case '2': case '3': case '4':
+                case '5': case '6': case '7': case '8': case '9':
+
+                    /*adicionar o caracter no campo referentea numeros  */
+                document.getElementById('apenas_numeros').value += caracter;
+                break;
+
+                default:
+                /* Adicionar o caracter o campo referente a letras, ou seja, se não digitar numeros só poderá digitar letras */ 
+                document.getElementById('apenas_letras').value += caracter;
+             
+
+            }
+        }
+
+    </script>
+
+
+    <h2>Distribuição de Caracteres</h2>
+
+    <input type="text" placeholder="Digite um caracter aqui" onkeyup="distribuirCaracter()" id="entrada">
+    <hr>
+
+    <span>Letras:</span>
+    <input type="text" disabled="disabled" id="apenas_letras">
+
+    <span>Numeros:</span>
+    <input type="text" disabled="disabled" id="apenas_numeros">
+
+
+
+
+
+
+
+</body>
+
+</html>

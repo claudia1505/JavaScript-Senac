@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade-33 DOM</title>
+</head>
+
+<body>
+
+    <!-- Elabore um programa utilizando os recursos da arvore DOM que você aprendeu na aula -->
+
+
+    <!-- Primeiro vamos criar uma lista de tarefa em uma div com o onmouserover e o onmouseout para que ele troque o texto  e adicionamos ao final do documento o seguinte texto: "Passe o mouse sobre esta frase e veja o que acontece!
+     que vamos inserir-->
+
+    <div id="div1" onmouseover="mudarTexto()" onmouseout="reverterTexto()">
+
+        Passe o mouse sobre esta frase e veja o que acontece!
+    </div>
+
+    
+    <script>
+
+        /* Inserimos a funçao mudarTexto  */
+        function mudarTexto() {
+
+            /* Chamamos a variavel div, mas observe que no document. dentro do parentese, chamamos a "div1" para trazer o texto que vai mudar a frase  */
+            var div = document.getElementById("div1");
+            div.innerHTML = "Olha que lega! Mudei a frase, isto é o que acontece quando se usa o Onmouseover e o Onmouseout!!!";
+
+        }
+
+        /* E aqui declaramos outra função reverterTexto para trazer o outro texto*/
+        function reverterTexto() {
+
+            /* Da mesma foram, chamamos a variavel div para trazer o primeiro texto*/
+            var div = document.getElementById("div1");
+            div.innerHTML = "Passe o mouse sobre esta frase e veja o que acontece!";
+
+        }
+
+     
+    </script>
+
+
+</body>
+
+</html>

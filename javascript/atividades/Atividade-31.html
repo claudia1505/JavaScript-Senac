@@ -21,7 +21,7 @@
     <h2>OnClick</h2>
 
     <p>Para aparecer um botão, clicando nele apenas uma vez.
-    Clique para acionar a função que produzirá "Olá Mundo":</p>
+        Clique para acionar a função que produzirá "Olá Mundo":</p>
 
     <!-- Vamos inserir o botão onclick pedindo uma ação -->
     <button onclick="acao()">Clique aqui</button>
@@ -70,28 +70,24 @@
     </script>
 
 
+    <h2>onmouseover​​​</h2>
+    <p>O onmouseover​​ aciona uma função que um elemento so aparece se depois que passar o mouse em cima dele.</p>
 
+    <button onmouseover="faca()">Clique aqui</button>
 
+    <p id="texto"></p>
 
-<h2>onmouseover​​​</h2>
-        <p>O onmouseover​​ aciona uma função que um elemento so aparece se depois que passar o mouse em cima dele.</p>
+    <script>
 
-        <button onmouseover="faca()">Clique aqui</button>
+        function faca() {
+            /*Dentro do script, inserimos a função ação e
+         inserimos o comando document.getElementById que nada mais é do que
+         pedir para trazer o Elemento Id "nome"  */
+            document.getElementById("texto").innerHTML = "Olá Mundo";
 
-        <p id="texto"></p>
+        }
 
-        <script>
-
-                function faca() {
-                /*Dentro do script, inserimos a função ação e
-             inserimos o comando document.getElementById que nada mais é do que
-             pedir para trazer o Elemento Id "nome"  */
-             document.getElementById("texto").innerHTML = "Olá Mundo";
-
-            }
-
-        </script>
-
+    </script>
 
 
 
@@ -99,46 +95,46 @@
 
 
 
-        <h2>onmouseout​​​</h2>
-        <p>Para aparecer uo elemento quando passarmos o mouse e tirarmos o mouse dentro do imput.</p>
+    <h2>onmouseout​​​</h2>
+    <p>Para aparecer uo elemento quando passarmos o mouse e tirarmos o mouse dentro do imput.</p>
 
-        <button onmouseout="faca()">Clique aqui</button>
+    <button onmouseout="faca()">Clique aqui</button>
 
-        <p id="texto"></p>
+    <p id="texto"></p>
 
-        <script>
+    <script>
 
-                function faca() {
-                /*Dentro do script, inserimos a função ação e
-             inserimos o comando document.getElementById que nada mais é do que
-             pedir para trazer o Elemento Id "nome"  */
-             document.getElementById("texto").innerHTML = "Olá Mundo";
+        function faca() {
+            /*Dentro do script, inserimos a função ação e
+         inserimos o comando document.getElementById que nada mais é do que
+         pedir para trazer o Elemento Id "nome"  */
+            document.getElementById("texto").innerHTML = "Olá Mundo";
 
-            }
+        }
 
-        </script>
+    </script>
 
-<br>
+    <br>
 
 
-        <h2>onmouseup​​​</h2>
-        <p>O onmouseup​ aciona uma função que um elemento so aparece se depois que passar o mouse em cima dele.</p>
+    <h2>onmouseup​​​</h2>
+    <p>O onmouseup​ aciona uma função que um elemento so aparece se depois que passar o mouse em cima dele.</p>
 
-        <button onmouseup="facaagora()">Clique aqui</button>
+    <button onmouseup="facaagora()">Clique aqui</button>
 
-        <p id="texto2"></p> 
+    <p id="texto2"></p>
 
-        <script>
+    <script>
 
-            function facaagora() {
-                /*Dentro do script, inserimos a função ação e
-                inserimos o comando document.getElementById que nada mais é do que
-                pedir para trazer o Elemento Id "nome"  */
-                document.getElementById("texto2").innerHTML = "Olá Mundo";
+        function facaagora() {
+            /*Dentro do script, inserimos a função ação e
+            inserimos o comando document.getElementById que nada mais é do que
+            pedir para trazer o Elemento Id "nome"  */
+            document.getElementById("texto2").innerHTML = "Olá Mundo";
 
-            }
+        }
 
-        </script>
+    </script>
 
 
 

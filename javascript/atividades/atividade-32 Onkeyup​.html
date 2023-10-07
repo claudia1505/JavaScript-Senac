@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 32 onkeyup​</title>
+</head>
+
+<body>
+    
+     <!-- Elabore um programa utilizando os seguintes eventos de teclado:​
+    onkeyup​ -->
+
+
+    <!-- Inserimos primeiro o Titulo n aPagina -->
+    <h2>Evento Onkeyup</h2>
+
+
+<p><b>Onkeyup</b>É uma função que quando acionada pelo usuário libera uma tecla no campo de entrada.</p>
+
+<p>Esta função transforma as letras minúsculas digitadas dentro da caixa de texto, ou seja, do imput, em letras maiúsculas:</p>
+
+ <!-- Criamos input do tipo texto com uma Id para digitação e acrescentamos a função do onkeyup para transformar a letra minuscula em maiuscula -->
+Digite seu nome: <input type="text" id="nome" onkeyup="minusculoMaiusculo()">
+
+
+<script>
+
+/*Agora vamos criar a função e nela vou inserir o que quero que ela faça, ou seja, acrescento o "minusculo Maiusculo que coloquei no onkeyup"  */
+function minusculoMaiusculo() {
+
+  /*Chamo a variavel text, para trazer o elemento Id "nome" e depois insiro a string com o toUpperCase para converter o texto minusculo em maiusculo  */    
+  let text = document.getElementById("nome");
+    
+  text.value = text.value.toUpperCase();
+}
+</script>
+
+
+
+
+</body>
+</html>

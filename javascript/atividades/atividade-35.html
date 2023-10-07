@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 35 ARRAY</title>
+</head>
+
+<body>
+
+    <!-- Enunciado: Elabore um programa utilizando os recursos de Array que você aprendeu na aula​ -->
+
+
+    <script>
+
+        /* Preciso criar uma lista (array) para armazenar os nomes dos alunos,
+        e então crio uma "let lista_alunos  e tambem "let lista_funcionarios" como abaixo"   */
+        let lista_alunos = Array();
+        let lista_funcionarios = Array();
+
+
+
+        /* Adiciono a lista_aluno mais o nome que vou chamar esta array "alunos"
+        e insiro o nome dos alunos  e da mesma forma a lista de funcionarios */
+        lista_alunos['alunos'] = [' Claudia', ' Vinicius', ' Daniel', ' Luis', ' Maria'];
+   
+        lista_funcionarios['funcionarios'] = ['Claudia', ' Maria', ' Jessica', ' Pedro'];
+
+
+
+        /*Para adicionar um aluno dentro da lista (Array), uso o "PUSH" o novo nome
+        será colocado no início de todos, ou seja, será o primeiro nome, e na 
+        sequencia, tenho que chamar o nome na tela usando o document.write e colocando
+        dentro do parentese o nome que dei para a lista, ou seja, "lista_alunos"  */
+
+        lista_alunos.push(' Vinicius,');
+        lista_alunos.push(' Lucas');
+
+        /*Para adicionar um aluno dentro da lista (Array), uso o "UNSHIFT" o novo nome
+        será colocado no final de todos, ou seja, será o último nome, e na 
+        sequencia, tenho que chamar o nome na tela usando o document.write e colocando
+        dentro do parentese o nome que dei para a lista, ou seja, "lista_alunos"  */
+        lista_alunos.unshift('Cristiano');
+
+
+        /* Para tirar um nome da lista, use o "POP" só que ele vai tirar sempre o ultimo nome 
+        da lista selecionada */
+        lista_alunos.pop();
+
+        document.write(lista_alunos);
+
+
+        /* Agora mando o comando document. para aparecer na tela e no console a lista de alunos  */
+        document.write(lista_alunos['alunos'])
+
+        document.write('<br>')  /* Para pular linha inseri um document.write com o <br>   */
+
+         /* Agora mando o comando document. para aparecer na tela e no console a lista de funcionarios  */
+        document.write(lista_funcionarios['funcionarios'])
+
+        console.log(lista_alunos); // Vai aparecer no console a lista de aluno
+
+        document.write('<br>')
+
+        console.log(lista_funcionarios); // Vai aparecer no console a lista de funcionarios
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

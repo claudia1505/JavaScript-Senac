@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 38 Digite a Senha</title>
+</head>
+
+<body>
+
+
+
+    <!-- Enunciado: Crie um programa que armazene uma senha definida você 
+         e solicite ao usuário digitar a senha, enquanto a senha digitada 
+         for diferente da sua senha o programa deverá continuar solicitando, 
+         caso seja a senha correta deverá imprimir na página que a senha está correta. -->
+   
+   <script>
+        let senha = prompt('Digite uma Senha?');
+
+        let senha_certa = 'senac';
+
+        while(senha != 'senac'){
+
+            alert('Senha incorreta, tente novamente');
+
+            senha = prompt('Digite novamente a Senha?');
+
+        } 
+
+            document.write('Senha Correta');
+       
+    </script>
+
+</body>
+
+</html>

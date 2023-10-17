@@ -1,29 +1,161 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criando Layout</title>
+    <title>Imagem Interativa com Upload</title>
+
+
+
+    <!-- configuração do css -->
+
+    <style>
+        #container1 {
+            width: 550px;
+            height: 150px;
+            background-color: rgb(7, 164, 192);
+            margin-left: 390px;
+            margin-top: 20px;
+            display: flexbox;
+            border-radius: 10%;
+        }
+
+        .container2 {
+
+            margin-left: 90px;
+            padding-top: 20px;
+
+        }
+
+
+        .container3 {
+
+            margin-left: 90px;
+            padding-top: 20px;
+        }
+
+        .botoes {
+
+            margin-left: 90px;
+            word-spacing: 50px;
+            margin-top: -15px;
+
+        }
+    </style>
 </head>
+
 <body>
-    
 
-<h1><center>Galeria de imagens Interativa com Upload </center></h1>
-<h3><font color="blue"><center>Desenvolvedores: Claudia / Natali</font></center></h3>
+    <!-- Criamos uma label com o nome do título 1 -->
+    <label style="font-size: 30px; color: red; text-align: center; display: block;"><b>Galeria de Imagens Interativa com
+            Upload</b></label>
+
+    <!-- Criamos uma label com o nome do Subtítulo  -->
+    <label style="font-size: 20px; color: rgb(123, 15, 238); margin-left: 385px; margin-top: 10px; display: block;"><b>Desenvolvedor:
+            Claudia</b></label>
 
 
+    <!-- Agora criamos um container para onde será inserido os inputs -->
+
+    <div id="container1">
+
+        <div class="container2">
+
+            <!-- Neste container, inserimos a label que ficará na frente do input que criamos na sequencia -->
+            <label>Upload de imagem: </label><input type="file" id="imageInput">
+        </div>
+
+        <br>
+
+        <div class="container3">
+
+            <!-- Neste container, inserimos a label que ficará na frente do input que criamos na sequencia, neste input nomeamos o  -->
+            <label>Quantidade de Imagem: </label><input type="number" id="repeatInput" min="1" value="1">
+        </div>
+
+        <br><br>
 
 
+        <div class="botoes">
+
+            <!-- Neste container, inserimos os botões inserir (para inserir a imagem) e resetar (para apagar a imagem), usando o Onclick-->
+            <button onclick="insertImages()">Inserir</button>
+
+            <button onclick="resetImages()">Resetar</button>
+
+        </div>
+
+    </div>
 
 
+    <!-- Agora, vamos inserir as funções abaixo -->
+    <script>
+
+        /* Inserimos o comando function insertImages, para trazer as imagens */
+        function insertImages() {
+
+            /* Inserimos o document.get para trazer o elemento que está no id container1*/
+            var container1 = document.getElementById('container1');
+
+            /* O "var imageInput" é uma declaração de variável que atribui o elemento encontrado à variável imageInput.
+             O "getElementById('imageInput')"" é usado para encontrar um elemento HTML na página com um atributo id específico. Nesse caso, ele está procurando um elemento com o id igual a 'imageInput'.  
+             Em resumo, o código está procurando um elemento HTML na página que tenha o atributo id definido como 'imageInput' e armazenando esse elemento em uma variável chamada imageInput.       
+             */
+            var imageInput = document.getElementById('imageInput');
+
+
+            /*a propriedade .value é usada para obter o valor associado ao elemento HTML com o id'repetirInput
+            
+            var repeatInput é uma declaração de variável que atribui o valor encontrado à variável repeatInput. 
+            
+             Essa variável agora conterá o valor do elemento HTML encontrado, que pode ser usado em seu código JavaScript para realizar outras ações, como cálculos, validações ou exibições na página.*/
+            var repeatInput = document.getElementById('repeatInput').value;
+
+
+            /* Neste caso, "for" é a palavra-chave que inicia a construção de um loop (repetição).
+            
+            var i = 0;: Isso declara uma variável i e a inicializa com o valor 0. A variável i geralmente é usada como um contador no loop. Ela começa com 0 neste caso. 
+      
+            
+            var i = 0;: Isso declara uma variável i e a inicializa com o valor 0. A variável i geralmente é usada como um contador no loop. Ela começa com 0 neste caso.
+      
+            i < repeatInput;: Esta é a condição de continuação do loop. Enquanto a condição i < repeatInput for verdadeira, o loop continuará a ser executado. repeatInput é a condição de parada do loop. O loop continuará enquanto i for menor que o valor contido em repeatInput.
+      
+            i++: Isso é o que chamamos de incremento. A cada iteração do loop, o valor da variável i é aumentado em 1. É equivalente a i = i + 1.
+            */
+
+            for (var i = 0; i < repeatInput; i++) {
+
+                /*"createElement('img')": Este é um método do objeto Document. Ele é usado para criar um novo elemento HTML. No caso, está criando um elemento <img>, que é usado para exibir imagens em uma página da web.   */
+                var img = document.createElement('img');
+
+                /* Leia a explicação mais detalhada do código "img.src = URL.createObjectURL(imageInput.files[0])" Logo abaixo */
+                img.src = URL.createObjectURL(imageInput.files[0]);
+
+                /* o código container1.appendChild(img) está inserindo o elemento representado pela variável img como um filho do elemento representado pela variável container1.img sendo colocado dentro de container1 no DOM, e, como resultado, a imagem representada por img será exibida no contexto de container1 na página da web.   */
+                container1.appendChild(img);
+
+            }
+
+        }
+
+        function resetImages() {
+
+            resetImages = document.getElementById('container1');
+            
+            /* o código "container1.innerHTML = '';"" é usado para limpar (remover) todo o conteúdo HTML dentro do elemento representado por `container1`.  */
+            //  container1.innertHTML;
+           
+
+
+            //   var imageElement = document.getElementById('container1');
+            //   imageElement. src = '';
+        }
+
+    </script>
 
 
 </body>
-</html>
 
-
-
-
-
-</body>
 </html>

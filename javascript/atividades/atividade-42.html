@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação Formulário</title>
+</head>
+
+
+
+
+<body>
+
+ 
+    <h1>Formulário e Validação de Nome e Email</h1>
+
+    <form onsubmit="return validarFormulario();">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+
+</body>
+
+
+<body>
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <script>
+
+            /* Primeiro criar a função validar formulário   */
+            function validarFormulario() {
+                
+                /* Criando as variaveis nome e e-mail*/
+                var nome = document.getElementById("nome").value;
+                var email = document.getElementById("email").value;
+
+                // Usando o "Regex" Expressão regular para validar o formato do email
+                var regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+
+                if (nome === "") {
+                    alert("Por favor, preencha o campo Nome.");
+                    return false;
+                }
+
+
+                if (!regexEmail.test(email)) {
+                    alert("Por favor, insira um endereço de e-mail válido.");
+                    return false;
+                }
+
+                return true; // condição permitida se a validação for verdadeira
+            }
+        </script>
+    </head>
+
+    
+
+    </html>
+
+
+
+
+
+
+</body>
+
+</html>

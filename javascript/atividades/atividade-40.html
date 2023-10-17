@@ -1,90 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relógio</title>
+    <title>Relógio Digital</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #0acaec;
+            margin: 0;
+        }
+
+        .relogio {
+            font-family: 'Courier New', monospace;
+            font-size: 40px;
+            color: #0b0000;
+            border: 4px solid #fff;
+            padding: 1rem;
+            border-radius: 10px;
+            font-style: oblique;
+            
+        }
+
+        .relogio span {
+            margin: 0 0.5rem;
+        }
+    </style>
 </head>
 <body>
-    
-    <style>
-        
-        #container{
-        display: flex;
-        align-itens: center;
-        justify-content: center;
-        margin-top:50px;
-        border-color: aqua;
-        border-width: 10px;
+    <div class="relogio">
+        <span id="hora"></span>
+        <span>:</span>
+        <span id="minuto"></span>
+        <span>:</span>
+        <span id="segundo"></span>
+    </div>
+    <script>
+        function atualizarRelogio() {
+            const agora = new Date();
+            const hora = agora.getHours();
+            const minuto = agora.getMinutes();
+            const segundo = agora.getSeconds();
 
+            document.getElementById('hora').textContent = hora < 10 ? '0' + hora : hora;
+            document.getElementById('minuto').textContent = minuto < 10 ? '0' + minuto : minuto;
+            document.getElementById('segundo').textContent = segundo < 10 ? '0' + segundo : segundo;
         }
-        
-        .horas, .minutos, .segundos{
-        border: 10px sold #000;
-        padding: 10px;
-        border-radius: 5px;
-        margin:10px;
-        
-        }
-        
-        
-        
-        </style>
-        
-        <div id="conteiner">
-        
-        <span id="horas" class="horas">00</span>
-        <span>:</span>
-        <span id="minutos" class="minutos"></span>
-        <span>:</span>
-        <span id="segundo" class="segundo">00</span>
-        </div>
-        
-        <script>
-        
-            const horas = document.getElementById('horas');
-        
-            const minutos = document.getElementById('minutos');
-        
-            const segundos = document.getElementById('segundos');
-        
-           
-        
-            const relogio = setInterval(function time() {
-        
-                let dateToday = new Date();
-        
-                let hr = dateToday.getHours();
-        
-                let min = dateToday.getMinutes();
-        
-                let s = dateToday.getSeconds();
-        
-           
-        
-                if (hr < 10) hr = '0' + hr;
-        
-           
-        
-                if (min < 10) min = '0' + min;
-        
-           
-        
-                if (s < 10) s = '0' + s;
-        
-           
-        
-                horas.textContent = hr;
-        
-                minutos.textContent = min;
-        
-                segundos.textContent = s;
-        
-           
-        
-            })
-        
-        </script>
+
+        setInterval(atualizarRelogio, 1000);
+    </script>
 
 
 
